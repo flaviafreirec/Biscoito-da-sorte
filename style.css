@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    height: 100vh;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    background-size: 500% 100%;
+    animation: bgAnimation 5s infinite alternate;
+}
+
+@keyframes bgAnimation {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+
+main {
+    background: #FFFFFF;
+    width: min(42.8rem, 90%);
+    min-height: 42.4rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+    text-align: center;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px; 
+}
+
+main h1 {
+    margin-bottom: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+}
+
+main p {
+    margin-bottom: 2rem;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+main .screen1 img:hover {
+
+    animation: shake .2s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+
+}
+
+
+@keyframes shake {
+    0% {margin-left: 0;}
+    25% {margin-left: 7px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -7px;}
+    100% {margin-left: 0;}
+}
+
+/* SCREEN 2 */
+
+#frases {
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    font-family: 'Dancing Script';
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-align: center;
+    margin-bottom: 5.7rem;
+    animation: scaleFrases 2s;
+    
+}
+
+@keyframes scaleFrases {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.screen2 button {
+    background: #FF9500;
+    border-radius: .4rem;
+    border: none;
+    padding: 1.6rem;
+    margin-top: 5.7rem;
+    color: #FFFFFF;
+    font-family: 'DM Sans', sans-serif;
+    
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    cursor: pointer;       
+}
+
+.screen2 button:hover {
+    background: #e88802;
+}
